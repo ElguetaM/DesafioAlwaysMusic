@@ -11,10 +11,5 @@ const pool = new Pool({
   user: DB_USER,
   allowExitOnIdle: true,
 });
-//Comentar esto despues
-const getData = async () => {
-  const response = await pool.query("select now()");
-  console.log(response.rows);
-};
 
 export default pool;
